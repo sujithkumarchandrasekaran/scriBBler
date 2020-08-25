@@ -34,8 +34,8 @@
                 <p class="sub-title">Explore, Imagine, Create</p>
             </div>
             <div class="login-buttons-container">
-                <button onclick="showSignInModal()" class="blue-button" type="button">Sign Up</button>
-                <button onclick="showSignUpModal()" class="blue-button" type="button">Sign In</button>
+                <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
+                <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
             </div>
         </div>
     
@@ -46,6 +46,37 @@
         </div>
     
     </div>
+
+<!-- Sign Up modal  -->
+<div>
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+
+            <div class="modal-head">
+                <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+                <h2 class="modal-title">Get Started</h2>
+            </div>
+            <hr>
+            <form>
+                <label for="fullname" class="label-text">Full name</label>
+                <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <label for="confirm_password" class="label-text">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signup">
+                    Sign up
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!-- Javascript for header  -->
+<script src="scripts\header.js"></script>
 
 </body>
 

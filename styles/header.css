@@ -58,3 +58,58 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     align-items: center;
     color: black;
 }
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    outline: none;
+    font-family: Abel;
+}
+
+.label-text {
+    font-weight: bold;
+    margin: 10px 0;
+    font-family: Abel;
+}
+
+.modal-content{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.modal-head {
+    display: flex;
+    flex-direction: column;
+}
+
+.close {
+    display: flex;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.modal-title{
+    align-self: center;
+    font-family: Abel;
+}
+
+.signup{
+    color: blue;
+    font-weight: bolder;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: Abel;
+}
+
+.bottom-banner{
+    font-family: Abel;
+}
+
