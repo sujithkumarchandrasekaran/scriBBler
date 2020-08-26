@@ -66,12 +66,39 @@
                 <input type="password" id="password" placeholder="Enter Password" required>
                 <label for="confirm_password" class="label-text">Confirm Password</label>
                 <input type="password" id="confirm_password" placeholder="Confirm Password" required>
+                <hr>
                 <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signup">
                     Sign up
                 </button>
             </form>
         </div>
     </div>
+</div>
+
+
+<div>
+    <!--Sign In modal -->
+    <div class="modal" id="signin-modal">
+        <div class="modal-content">
+
+            <div class="modal-head">
+                <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
+                <h2 class="modal-title">Welcome Back!</h2>
+            </div>
+            <hr>
+            <form>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+            </form>
+
+            <p class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" 
+                                                                            class=signup>Sign Up</span></p>
+        </div>
+    </div>
+
 </div>
 
 
