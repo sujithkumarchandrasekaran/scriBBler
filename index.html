@@ -6,11 +6,10 @@
  
     <title>ScriBBler</title>
 
-    <!-- Place all CSS for header in this file -->
+    <!--  CSS -->
     <link href='styles\header.css' rel='stylesheet' type='text/css'>
-
-    <!-- Place all CSS for the rest of the elements in this file -->
     <link href='styles\index.css' rel='stylesheet' type='text/css'>
+    <link href='styles\createpost.css' rel='stylesheet' type='text/css'>
 
     <!-- Place all CSS for fonts in this file -->
     <link href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
@@ -50,24 +49,22 @@
 <!-- Sign Up modal  -->
 <div>
     <div class="modal" id="signup-modal">
-        <div class="modal-content">
+        <div class="modal-content-signup">
 
             <div class="modal-head">
-                <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
-                <h2 class="modal-title">Get Started</h2>
+            <h2 class="modal-title">Get Started<span onclick="hideSignUpModal()" id="close" class="close">&times;</span> </h2>
             </div>
             <hr>
             <form>
-                <label for="fullname" class="label-text">Full name</label>
-                <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                <label for="fullname" class="label-text">Name</label>
+                <input type="text" id="fullname" placeholder="Enter your name" required>
                 <label for="username" class="label-text">Username</label>
-                <input type="text" id="username" placeholder="Enter Username" required>
+                <input type="text" id="username" placeholder="Enter your username" required>
                 <label for="password" class="label-text">Password</label>
-                <input type="password" id="password" placeholder="Enter Password" required>
+                <input type="password" id="password" placeholder="Enter your password" required>
                 <label for="confirm_password" class="label-text">Confirm Password</label>
-                <input type="password" id="confirm_password" placeholder="Confirm Password" required>
-                <hr>
-                <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="signup">
+                <input type="password" id="confirm_password" placeholder="Re-Enter your password" required>
+                <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="Greenbutton">
                     Sign up
                 </button>
             </form>
@@ -79,31 +76,53 @@
 <div>
     <!--Sign In modal -->
     <div class="modal" id="signin-modal">
-        <div class="modal-content">
+        <div class="modal-content-signin">
 
             <div class="modal-head">
-                <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
-                <h2 class="modal-title">Welcome Back!</h2>
+                <h2 class="modal-title">Welcome Back!<span onclick="hideSignInModal()" id="close" class="close">&times;</span> </h2>              
             </div>
             <hr>
             <form>
                 <label for="username" class="label-text">Username</label>
-                <input type="text" id="username" placeholder="Enter Username" required>
+                <input type="text" id="username" placeholder="Enter your username" required>
                 <label for="password" class="label-text">Password</label>
-                <input type="password" id="password" placeholder="Enter Password" required>
-                <button type="submit" onclick="signin(username, password)" class="signin-btn">Sign In</button>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="submit" onclick="signin(username, password)" class="Greenbutton">Sign In</button>
             </form>
 
-            <p class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" 
-                                                                            class=signup>Sign Up</span></p>
+            <div class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></div>
         </div>
     </div>
 
 </div>
 
 
+<div>
+    <!-- Create Post modal  -->
+    <div class="modal" id="create-post-modal">
+
+        <div class="modal-content-post">
+
+            <div class="modal-head">
+             <h2 class="modal-title">Pen your post <span onclick="hideCreatePostModal()" id="close" class="close">&times;</span> </h2>
+            </div>
+            <hr>
+            <form id=create-post-form>
+                <label for="title" class="label-text">Title</label>
+                <input type="text" id="title" placeholder="Enter title for your post" required>
+                <label for="contents" class="label-text">Contents</label>
+                <textarea cols="50" rows="10" id="contents" name="post-details" form="create-post-form"></textarea>
+                <button type="submit" onclick="createPost()" class="postbutton">Create</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
 <!-- Javascript for header  -->
 <script src="scripts\header.js"></script>
+<script src="scripts\index.js"></script>
 
 </body>
 
