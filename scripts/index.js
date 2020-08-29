@@ -8,6 +8,6 @@ function hideCreatePostModal(){
     modal.style.display = "none";
 }
 
-// function navigateToBlogList(){
-//     location.href = "html/bloglist.html"
-// }
+function navigateToBlogList(){
+    location.href = "html/postslist.html"
+}
