@@ -3,6 +3,10 @@
 
 <head>
 
+    <title>
+        All_Posts
+    </title>
+
    <!--  CSS -->
   <link href='..\styles\postslist.css' rel='stylesheet' type='text/css'>
   <link href='..\styles\header.css' rel='stylesheet' type='text/css'>
@@ -193,6 +197,59 @@
         <!-- TODO: Write code for delete post modal here -->
 
     </div>
+
+
+<!-- Sign Up modal  -->
+<div>
+    <div class="modal" id="signup-modal">
+        <div class="modal-content-signup">
+
+            <div class="modal-head">
+            <h2 class="modal-title">Get Started<span onclick="hideSignUpModal()" id="close" class="close">&times;</span> </h2>
+            </div>
+            <hr>
+            <form>
+                <label for="fullname" class="label-text">Name</label>
+                <input type="text" id="fullname" placeholder="Enter your name" required>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <label for="confirm_password" class="label-text">Confirm Password</label>
+                <input type="password" id="confirm_password" placeholder="Re-Enter your password" required>
+                <button type="submit" onclick="signup(firstName,lastName, email, password, mobile)" class="Greenbutton">
+                    Sign up
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <!--Sign In modal -->
+    <div class="modal" id="signin-modal">
+        <div class="modal-content-signin">
+
+            <div class="modal-head">
+                <h2 class="modal-title">Welcome Back!<span onclick="hideSignInModal()" id="close" class="close">&times;</span> </h2>              
+            </div>
+            <hr>
+            <form>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                <button type="submit" onclick="signin(username, password)" class="Greenbutton">Sign In</button>
+            </form>
+
+            <div class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></div>
+        </div>
+    </div>
+
+</div>
+
+
 </div>
 <div>
     <div class="trash-modal" id="modal-trash">
@@ -210,6 +267,8 @@
 
     <!-- Javascript for Trash  -->
 <script src="..\scripts\postslist.js"></script>
+<script src="..\scripts\header.js"></script>
+<script src="..\scripts\index.js"></script>
 
 </body>
 
