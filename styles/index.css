@@ -1,43 +1,46 @@
-html{
+html {
     height: 100%;
-    width:100%
+    width: 100%
 }
-body{
+
+body {
     background: url('../images/background.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: 100% 100%;
-    overflow:hidden;
+    overflow: hidden;
     display: block;
     height: 100%;
 }
-#main-container-div{
+
+#main-container-div {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     height: 100%;
     width: 100%;
-    /* background-color: rgb(252, 236, 241); */
 }
-.yellow-button{
-    background:#cfb53b;
+
+.yellow-button {
+    background: #cfb53b;
     padding: 8px 5px 8px 5px;
-    color:black;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80%;
     border-color: white;
     width: 120px;
     margin-right: 10px;
 }
-.postButtons{
+
+.postButtons {
     display: flex;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
 }
-textarea{
+
+textarea {
     margin-top: 10px;
 }
-

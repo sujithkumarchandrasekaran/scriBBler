@@ -1,13 +1,13 @@
-function showCreatePost(){
+function showCreatePost() {
     var modal = document.getElementById("create-post-modal");
     modal.style.display = "flex";
 }
 
-function hideCreatePostModal(){
+function hideCreatePostModal() {
     var modal = document.getElementById("create-post-modal");
     modal.style.display = "none";
 }
 
-function navigateToBlogList(){
+function navigateToBlogList() {
     location.href = "html/postslist.html"
 }

@@ -1,19 +1,19 @@
-.modal-content-post{
+.modal-content-post {
     margin-top: 75px;
     margin-bottom: 75px;
     margin-left: 10%;
     margin-right: 10%;
-    width:100%;
+    width: 100%;
     height: 80%;
     padding: 20px;
-    font-weight:normal;
+    font-weight: normal;
     background-color: white;
 }
 
 #create-post-form {
     display: flex;
     flex-direction: column;
-    width: 100% ;  
+    width: 100%;
 }
 
 #contents {
@@ -34,5 +34,5 @@
     font-family: Abel;
     width: 10%;
     align-self: center;
-   
+
 }

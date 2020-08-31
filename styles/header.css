@@ -1,74 +1,71 @@
-/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button,
-the title "ScriBBler" & the sub-heading below "ScriBBLer" */
-.header{
+.header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
 }
 
-.title-container{
+.title-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.blue-button{
+.blue-button {
     background-color: blue;
     padding: 8px 5px 8px 5px;
-    color:white;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80%;
     border-color: white;
     width: 100px;
     margin-right: 10px;
-  
+
 }
 
-.title{
+.title {
     font-family: 'Montez', cursive;
     font-size: 30px;
     color: blue;
     margin: 0;
 }
 
-.sub-title{
+.sub-title {
     font-family: 'Marck Script', cursive;
     font-size: 10;
     color: black;
     margin: 0;
 }
 
-.login-buttons-container{
+.login-buttons-container {
     padding: 10px;
 }
 
 .modal {
-    background-color: rgba(0,0,0,0.3);
-    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 100%;
     width: 100%;
-   }
+}
 
-.modal-content-signin{
+.modal-content-signin {
     margin-top: 150px;
     margin-bottom: 150px;
     margin-left: 35%;
     margin-right: 50%;
     padding: 20px;
-    font-weight:normal;
+    font-weight: normal;
     background-color: white;
 }
 
-.modal-content-signup{
+.modal-content-signup {
     margin-top: 75px;
     margin-bottom: 75px;
     margin-left: 35%;
     margin-right: 50%;
     padding: 20px;
-    font-weight:normal;
+    font-weight: normal;
     background-color: white;
 }
-
 
 
 .modal-head {
@@ -78,7 +75,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     background-color: white;
 }
 
-.modal-title{
+.modal-title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -93,7 +90,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
 form {
     display: flex;
     flex-direction: column;
-    width: 400px;  
+    width: 400px;
 }
 
 input {
@@ -104,14 +101,14 @@ input {
 }
 
 .label-text {
-   margin: 10px 0px;
-   font-family: Arial;
-   font-size: 20px;
-   font-weight: lighter;
+    margin: 10px 0px;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 
-.signup{
+.signup {
     color: blue;
     font-weight: bolder;
     margin-left: 10px;
@@ -119,14 +116,14 @@ input {
     font-family: Abel;
 }
 
-.bottom-banner{
+.bottom-banner {
     font-family: Abel;
     font-size: 20px;
     padding-top: 20px;
     display: flex;
-    align-content:center;
+    align-content: center;
 
-    }
+}
 
 .Greenbutton {
     background-color: green;
@@ -139,7 +136,7 @@ input {
     font-family: Abel;
     width: 100%;
     align-self: center;
-   
+
 }
 
 hr {

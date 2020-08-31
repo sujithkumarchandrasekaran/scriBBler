@@ -3,7 +3,7 @@
 
 <head>
 
- 
+
     <title>ScriBBler</title>
 
     <!--  CSS -->
@@ -13,38 +13,39 @@
 
     <!-- fonts  -->
     <link href="https://fonts.googleapis.com/css?family=Montez|Roboto|Ubuntu+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"
+          type="text/css" media="screen"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 
 </head>
 
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
+
+<!-- TODO: Include all your code for the header and home page here -->
 
 
-    <div id="main-container-div">
-        <!-- code for Sign Up, Sign In button and for "ScriBBler" heading and the sub-heading -->
-        <div class="header">
-            <div class="title-container">
-                <p class="title">ScriBBler</p>
-                <p class="sub-title">Explore, Imagine, Create</p>
-            </div>
-            <div class="login-buttons-container">
-                <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
-                <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
-            </div>
+<div id="main-container-div">
+    <!-- code for Sign Up, Sign In button and for "ScriBBler" heading and the sub-heading -->
+    <div class="header">
+        <div class="title-container">
+            <p class="title">ScriBBler</p>
+            <p class="sub-title">Explore, Imagine, Create</p>
         </div>
-    
-        <div class="postButtons">
-            <!-- Insert code for All Posts & Create Post button here -->
-            <button onclick="navigateToBlogList()" class="yellow-button" type="button">All Posts</button>
-            <button onclick="showCreatePost()" class="yellow-button" type="button">Create Post</button>
+        <div class="login-buttons-container">
+            <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
+            <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
         </div>
-    
     </div>
+
+    <div class="postButtons">
+        <!-- Insert code for All Posts & Create Post button here -->
+        <button onclick="navigateToBlogList()" class="yellow-button" type="button">All Posts</button>
+        <button onclick="showCreatePost()" class="yellow-button" type="button">Create Post</button>
+    </div>
+
+</div>
 
 <!-- Sign Up modal  -->
 <div>
@@ -52,7 +53,8 @@
         <div class="modal-content-signup">
 
             <div class="modal-head">
-            <h2 class="modal-title">Get Started<span onclick="hideSignUpModal()" id="close" class="close">&times;</span> </h2>
+                <h2 class="modal-title">Get Started<span onclick="hideSignUpModal()" id="close"
+                                                         class="close">&times;</span></h2>
             </div>
             <hr>
             <form>
@@ -79,7 +81,8 @@
         <div class="modal-content-signin">
 
             <div class="modal-head">
-                <h2 class="modal-title">Welcome Back!<span onclick="hideSignInModal()" id="close" class="close">&times;</span> </h2>              
+                <h2 class="modal-title">Welcome Back!<span onclick="hideSignInModal()" id="close"
+                                                           class="close">&times;</span></h2>
             </div>
             <hr>
             <form>
@@ -90,7 +93,8 @@
                 <button type="submit" onclick="signin(username, password)" class="Greenbutton">Sign In</button>
             </form>
 
-            <div class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></div>
+            <div class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span>
+            </div>
         </div>
     </div>
 
@@ -104,7 +108,8 @@
         <div class="modal-content-post">
 
             <div class="modal-head">
-             <h2 class="modal-title">Pen your post <span onclick="hideCreatePostModal()" id="close" class="close">&times;</span> </h2>
+                <h2 class="modal-title">Pen your post <span onclick="hideCreatePostModal()" id="close" class="close">&times;</span>
+                </h2>
             </div>
             <hr>
             <form id=create-post-form>
@@ -117,7 +122,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!-- Javascript for header  -->
